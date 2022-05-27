@@ -1,0 +1,212 @@
+<?xml version='1.0' encoding='GB2312'?>
+<pcr root="PCR1280720">
+    <file id="登录:点击屏幕" file="00登录01点击屏幕.png" note="00登录01点击屏幕" roi="FULL" fb="SELF"/>
+    <file id="登录:点击屏幕" file="00登录01开始游戏.png" note="00登录01开始游戏" roi="FULL" fb="SELF"/>
+    <file id="登录:跳过" file="00登录02跳过按钮.png" note="00登录02跳过按钮" roi="FULL" fb="SELF"/>
+
+    <file id="帐号:切换" file="00登录02切换帐号.png" note="00登录02切换帐号" roi="FULL" fb="SELF"/>
+    <file id="账号:列表" file="01账号01列表按钮.png" note="01账号01列表按钮" roi="FULL" fb="SELF"/>
+    <file id="账号:上次" file="01账号01上次登录.png" note="01账号01上次登录" roi="FULL" fb="SELF"/>
+    <file id="账号:登录" file="01账号01登录按钮.png" note="01账号01登录按钮" roi="FULL" fb="SELF"/>
+    <file id="账号:取消" file="01账号04取消按钮.png" note="01账号04取消按钮" roi="FULL" fb="SELF"/>
+    <file id="账号:确认" file="01账号04确认按钮.png" note="01账号04确认按钮" roi="FULL" fb="SELF"/>
+
+    <file id="兰德索尔杯:选择角色" file="02活动.兰德索尔杯.选择角色.png" note="02活动.兰德索尔杯.选择角色" roi="FULL" fb="SELF"/>
+    <file id="兰德索尔杯:旗帜" file="02活动.兰德索尔杯.旗1.png" note="02活动.兰德索尔杯.旗1" roi="FULL" fb="SELF"/>
+    <file id="兰德索尔杯:旗帜" file="02活动.兰德索尔杯.旗2.png" note="02活动.兰德索尔杯.旗2" roi="FULL" fb="SELF"/>
+    <file id="兰德索尔杯:旗帜" file="02活动.兰德索尔杯.旗3.png" note="02活动.兰德索尔杯.旗3" roi="FULL" fb="SELF"/>
+    <file id="兰德索尔杯:旗帜" file="02活动.兰德索尔杯.旗4.png" note="02活动.兰德索尔杯.旗4" roi="FULL" fb="SELF"/>
+    <file id="兰德索尔杯:开始" file="02活动.兰德索尔杯.竞赛开始按钮.png" note="02活动.兰德索尔杯.竞赛开始按钮" roi="FULL" fb="SELF"/>
+    <file id="兰德索尔杯:跳过" file="02活动.兰德索尔杯.跳过按钮.png" note="02活动.兰德索尔杯.跳过按钮" roi="FULL" fb="SELF"/>
+    <file id="兰德索尔杯:结果" file="02活动.兰德索尔杯.结果.png" note="02活动.兰德索尔杯.结果" roi="FULL" fb="SELF"/>
+
+    <file id="通告:通知活动" file="03通告01活动结束通告页面.png" note="03通告01活动结束通告页面" roi="FULL" fb="SELF"/>
+    <file id="通告:通知活动" file="03通告02通知页面.png" note="03通告02通知页面" roi="FULL" fb="SELF"/>
+    <file id="通告:关闭按钮" file="03通告01关闭按钮.png" note="03通告01取消按钮" roi="FULL" fb="SELF"/>
+    <file id="通告:关闭按钮" file="03通告02关闭按钮.png" note="03通告02取消按钮" roi="FULL" fb="SELF"/>
+
+    <file id="导航:主页" file="04导航01主页.png" note="04导航01主页" roi="FULL" fb="SELF"/>
+    <file id="导航:主页" file="04导航01主页选定.png" note="04导航01主页选定" roi="FULL" fb="SELF"/>
+    <file id="导航:角色" file="04导航02角色.png" note="04导航02角色" roi="FULL" fb="SELF"/>
+    <file id="导航:角色" file="04导航02角色选定.png" note="04导航02角色选定" roi="FULL" fb="SELF"/>
+    <file id="导航:剧情" file="04导航03剧情.png" note="04导航03剧情" roi="FULL" fb="SELF"/>
+    <file id="导航:剧情" file="04导航03剧情选定.png" note="04导航03剧情选定" roi="FULL" fb="SELF"/>
+    <file id="导航:冒险" file="04导航04冒险.png" note="04导航04冒险" roi="FULL" fb="SELF"/>
+    <file id="导航:冒险" file="04导航04冒险选定.png" note="04导航04冒险选定" roi="FULL" fb="SELF"/>
+    <file id="导航:之家" file="04导航05之家.png" note="04导航05之家" roi="FULL" fb="SELF"/>
+    <file id="导航:之家" file="04导航05之家选定.png" note="04导航05之家选定" roi="FULL" fb="SELF"/>
+    <file id="导航:抽卡" file="04导航06抽卡.png" note="04导航06抽卡" roi="FULL" fb="SELF"/>
+    <file id="导航:抽卡" file="04导航06抽卡选中.png" note="04导航06抽卡选中" roi="FULL" fb="SELF"/>
+    <file id="导航:主菜单" file="04导航07主菜单.png" note="04导航07主菜单" roi="FULL" fb="SELF"/>
+    <file id="导航:主菜单" file="04导航07主菜单选中.png" note="04导航07主菜单选中" roi="FULL" fb="SELF"/>
+
+    <file id="剧情:主线" file="04剧情01主线.png" note="04剧情01主线" roi="FULL" fb="SELF"/>
+    <file id="剧情:角色" file="04剧情02角色.png" note="04剧情02角色" roi="FULL" fb="SELF"/>
+    <file id="剧情:公会" file="04剧情03公会.png" note="04剧情03公会" roi="FULL" fb="SELF"/>
+    <file id="剧情:特别" file="04剧情04特别.png" note="04剧情04特别" roi="FULL" fb="SELF"/>
+    <file id="剧情:新内容" file="04剧情05新内容.png" note="04剧情05新内容" roi="FULL" fb="SELF"/>
+    <file id="剧情:新内容" file="04剧情06新内容.png" note="04剧情06新内容" roi="FULL" fb="SELF"/>
+
+    <file id="公会之家:全部收取" file="04公会之家01全部收取按钮.png" note="04公会之家01全部收取按钮" roi="FULL" fb="SELF"/>
+
+    <file id="抽卡:每日标志" file="04抽卡01每日刷新.png" note="04抽卡01每日刷新" roi="FULL" fb="SELF"/>
+    <file id="抽卡:每日刷新" file="04抽卡02每日刷新.png" note="04抽卡02每日刷新" roi="FULL" fb="SELF"/>
+    <file id="抽卡:每日十连" file="04抽卡03每日十连.png" note="04抽卡03每日十连" roi="FULL" fb="SELF"/>
+
+    <file id="主页:商店" file="04按钮01商店.png" note="04按钮01商店" roi="FULL" fb="SELF"/>
+    <file id="主页:行会" file="04按钮02行会.png" note="04按钮02行会" roi="FULL" fb="SELF"/>
+    <file id="主页:通知" file="04按钮03通知.png" note="04按钮03通知" roi="FULL" fb="SELF"/>
+    <file id="主页:任务" file="04按钮04任务.png" note="04按钮04任务" roi="FULL" fb="SELF"/>
+    <file id="主页:礼物" file="04按钮05礼物.png" note="04按钮05礼物" roi="FULL" fb="SELF"/>
+
+    <file id="冒险:主线" file="04冒险01主线.png" note="04冒险01主线" roi="FULL" fb="SELF"/>
+    <file id="冒险:探索" file="04冒险02探索.png" note="04冒险02探索" roi="FULL" fb="SELF"/>
+    <file id="冒险:地下城" file="04冒险03地下城.png" note="04冒险03地下城" roi="FULL" fb="SELF"/>
+    <file id="冒险:4调查" file="04冒险04调查.png" note="04冒险04调查" roi="FULL" fb="SELF"/>
+    <file id="冒险:团队战" file="04冒险05团队战.png" note="04冒险05团队战" roi="FULL" fb="SELF"/>
+    <file id="冒险:战斗竞技场" file="04冒险06战斗竞技场.png" note="04冒险06战斗竞技场" roi="FULL" fb="SELF"/>
+    <file id="冒险:公主竞技场" file="04冒险06公主竞技场.png" note="04冒险06公主竞技场" roi="FULL" fb="SELF"/>
+    <file id="冒险:露娜" file="04冒险07露娜之塔.png" note="04冒险07露娜之塔" roi="FULL" fb="SELF"/>
+    <file id="冒险:复刻" file="04冒险08复刻.png" note="04冒险08复刻" roi="FULL" fb="SELF"/>
+    <file id="冒险:活动" file="04冒险08活动.png" note="04冒险08活动" roi="FULL" fb="SELF"/>
+    <file id="冒险:外传" file="04冒险09外传.png" note="04冒险09外传" roi="FULL" fb="SELF"/>
+
+    <file id="礼物:礼物箱" file="05礼物01礼物箱窗口.png" note="05礼物01礼物箱窗口" roi="FULL" fb="SELF"/>
+    <file id="礼物:全部收取" file="05礼物01全部收取按钮.png" note="05礼物01全部收取按钮" roi="FULL" fb="SELF"/>
+
+    <file id="任务:全部收取" file="05任务01全部收取.png" note="05任务01全部收取" roi="FULL" fb="SELF"/>
+    <file id="任务:关闭" file="05任务02关闭.png" note="05任务02关闭" roi="FULL" fb="SELF"/>
+
+    <file id="商店:购买确认" file="05商店01购买确认.png" note="05商店01购买确认" roi="FULL" fb="SELF"/>
+    <file id="商店:确认购买" file="05商店01确认购买.png" note="05商店01确认购买" roi="FULL" fb="SELF"/>
+    <file id="商店:卖空" file="05商店01卖空.png" note="05商店01卖空" roi="FULL" fb="SELF"/>
+    <file id="商店:通常售完" file="05商店01通常售完.png" note="05商店01通常售完" roi="FULL" fb="SELF"/>
+    <file id="商店:确认重置" file="05商店01确认重置.png" note="05商店01确认重置" roi="FULL" fb="SELF"/>
+    <file id="商店:通常" file="05商店01通常.png" note="05商店01通常" roi="FULL" fb="SELF"/>
+    <file id="商店:通常" file="05商店01通常选中.png" note="05商店01通常选中" roi="FULL" fb="SELF"/>
+    <file id="商店:地下城" file="05商店02地下城.png" note="05商店02地下城" roi="FULL" fb="SELF"/>
+    <file id="商店:地下城" file="05商店02地下城选中.png" note="05商店02地下城选中" roi="FULL" fb="SELF"/>
+    <file id="商店:竞技场" file="05商店03竞技场.png" note="05商店03竞技场" roi="FULL" fb="SELF"/>
+    <file id="商店:竞技场" file="05商店03竞技场选中.png" note="05商店03竞技场选中" roi="FULL" fb="SELF"/>
+    <file id="商店:公主" file="05商店04公主竞技场.png" note="05商店04公主竞技场" roi="FULL" fb="SELF"/>
+    <file id="商店:公主" file="05商店04公主竞技场选中.png" note="05商店04公主竞技场选中" roi="FULL" fb="SELF"/>
+    <file id="商店:行会" file="05商店05行会.png" note="05商店05行会" roi="FULL" fb="SELF"/>
+    <file id="商店:行会" file="05商店05行会选中.png" note="05商店05行会选中" roi="FULL" fb="SELF"/>
+    <file id="商店:大师" file="05商店06大师.png" note="05商店06大师" roi="FULL" fb="SELF"/>
+    <file id="商店:大师" file="05商店06大师选中.png" note="05商店06大师选中" roi="FULL" fb="SELF"/>
+    <file id="商店:秘石" file="05商店07秘石.png" note="05商店07秘石" roi="FULL" fb="SELF"/>
+    <file id="商店:秘石" file="05商店07秘石选中.png" note="05商店07秘石选中" roi="FULL" fb="SELF"/>
+    <file id="商店:限定" file="05商店08限定.png" note="05商店08限定" roi="FULL" fb="SELF"/>
+    <file id="商店:限定" file="05商店08限定选中.png" note="05商店08限定选中" roi="FULL" fb="SELF"/>
+    <file id="商店:选框" file="05商店10批量选框.png" note="05商店10批量选框" roi="FULL" fb="SELF"/>
+    <file id="商店:选框" file="05商店10批量选框半.png" note="05商店10批量选框半" roi="FULL" fb="SELF"/>
+    <file id="商店:十万更新" file="05商店11十万立刻更新.png" note="05商店11十万立刻更新" roi="FULL" fb="SELF"/>
+    <file id="商店:立刻更新" file="05商店12立刻更新.png" note="05商店12立刻更新" roi="FULL" fb="SELF"/>
+    <file id="商店:解除所有" file="05商店12解除所有.png" note="05商店12解除所有" roi="FULL" fb="SELF"/>
+    <file id="商店:批量购入" file="05商店12批量购入.png" note="05商店12批量购入" roi="FULL" fb="SELF"/>
+    <file id="商店:超级经验" file="05商店20超级经验药剂.png" note="05商店20超级经验药剂" roi="FULL" fb="SELF"/>
+
+    <file id="战斗:下一关" file="11战斗01下一关.png" note="11战斗01下一关" roi="FULL" fb="0 140 68 40 SELF"/>
+    <file id="战斗:下一关" file="11战斗01下一关箭头.png" note="11战斗01下一关箭头" roi="FULL" fb="-23 114 68 40 SELF"/>
+    <file id="战斗:下一关备用" file="11战斗01下一关GM.png" note="11战斗01下一关GM" roi="FULL" fb="0 70 40 40 SELF"/>
+    <file id="战斗:下一关备用" file="11战斗01下一关SSH.png" note="11战斗01下一关SSH" roi="FULL" fb="0 70 40 40 SELF"/>
+    <file id="战斗:关卡横杠" file="11战斗01关卡横杠.png" note="11战斗01关卡横杠" roi="FULL" fb="SELF"/>
+    <file id="战斗:通关星" file="11战斗01满星.png" note="11战斗01满星" roi="FULL" fb="SELF"/>
+    <file id="战斗:通关星" file="11战斗01一星.png" note="11战斗01一星" roi="FULL" fb="SELF"/>
+    <file id="战斗:通关星" file="11战斗01二星.png" note="11战斗01二星" roi="FULL" fb="SELF"/>
+    <file id="战斗:通关星" file="11战斗01三星.png" note="11战斗01三星" roi="FULL" fb="SELF"/>
+    <file id="战斗:次数用完" file="11战斗01次数用完.png" note="11战斗01次数用完" roi="FULL" fb="SELF"/>
+    <file id="战斗:上一关卡" file="11战斗01上一关卡.png" note="11战斗01上一关卡" roi="FULL" fb="SELF"/>
+    <file id="战斗:下一关卡" file="11战斗01下一关卡.png" note="11战斗01下一关卡" roi="FULL" fb="SELF"/>
+
+    <file id="扫荡:批量" file="10扫荡01批量.png" note="10扫荡01批量" roi="FULL" fb="SELF"/>
+    <file id="扫荡:一键扫荡" file="10扫荡02一键扫荡按钮.png" note="10扫荡02一键扫荡按钮" roi="FULL" fb="SELF"/>
+    <file id="扫荡:加" file="10扫荡03加号.png" note="10扫荡03加号" roi="FULL" fb="SELF"/>
+    <file id="扫荡:使用" file="10扫荡03击破.png" note="10扫荡03击破" roi="FULL" fb="SELF"/>
+    <file id="扫荡:使用" file="10扫荡03使用.png" note="10扫荡03使用" roi="FULL" fb="SELF"/>
+    <file id="扫荡:扫荡确认" file="10扫荡03确认.png" note="10扫荡03确认" roi="FULL" fb="SELF"/>
+    <file id="扫荡:完成确认" file="10扫荡05确认.png" note="10扫荡05确认" roi="FULL" fb="SELF"/>
+    <file id="扫荡:合计获得" file="10扫荡04合计获得报酬.png" note="10扫荡04合计获得报酬" roi="FULL" fb="SELF"/>
+    <file id="扫荡:跳过完毕" file="10扫荡05跳过完毕.png" note="10扫荡05跳过完毕" roi="FULL" fb="SELF"/>
+
+    <file id="战斗:挑战按钮" file="11战斗01挑战按钮.png" note="11战斗01挑战按钮" roi="FULL" fb="SELF"/>
+    <file id="战斗:挑战取消" file="11战斗01取消按钮.png" note="11战斗01取消按钮" roi="FULL" fb="SELF"/>
+    <file id="战斗:体力不足" file="11战斗01体力不足.png" note="11战斗01体力不足" roi="FULL" fb="SELF"/>
+    <file id="战斗:队伍编组" file="11战斗02队伍编组.png" note="11战斗02队伍编组" roi="FULL" fb="SELF"/>
+    <file id="战斗:空队伍" file="11战斗02空队伍.png" note="11战斗02空队伍" roi="FULL" fb="SELF"/>
+    <file id="战斗:空队伍" file="11战斗02空队伍无条.png" note="11战斗02空队伍无条" roi="FULL" fb="SELF"/>
+    <file id="战斗:我的队伍" file="11战斗02我的队伍.png" note="11战斗02我的队伍" roi="FULL" fb="SELF"/>
+    <file id="战斗:队伍一览" file="11战斗02队伍一览.png" note="11战斗02队伍一览" roi="FULL" fb="SELF"/>
+    <file id="战斗:使用编组" file="11战斗02使用编组.png" note="11战斗02使用编组" roi="900 200 300 150" fb="SELF"/>
+    <file id="战斗:战斗开始" file="11战斗02战斗开始.png" note="11战斗02战斗开始" roi="FULL" fb="SELF"/>
+    <file id="战斗:时间沙漏" file="11战斗03沙漏.png" note="11战斗03沙漏" roi="FULL" fb="SELF"/>
+
+    <file id="对话:名片" file="12对话01.png" note="12对话01" roi="FULL" fb="SELF"/>
+    <file id="对话:箭头" file="12对话02.png" note="12对话02" roi="FULL" fb="SELF"/>
+
+    <file id="战斗:挑战胜利" file="11战斗03挑战胜利.png" note="11战斗03挑战胜利" roi="FULL" fb="950 600 320 110"/>
+    <file id="战斗:玩家等级" file="11战斗03玩家等级.png" note="11战斗03玩家等级" roi="FULL" fb="950 600 320 110"/>
+    <file id="战斗:好感度" file="11战斗03好感度.png" note="11战斗03好感度" roi="FULL" fb="950 600 320 110"/>
+    <file id="战斗:限定商店" file="11战斗03限定商店.png" note="11战斗03限定商店" roi="FULL" fb="SELF"/>
+    <file id="战斗:商店取消" file="11战斗03取消.png" note="11战斗03取消" roi="FULL" fb="SELF"/>
+    <file id="战斗:获得道具" file="11战斗03获得道具.png" note="11战斗03获得道具" roi="FULL" fb="950 600 320 110"/>
+    <file id="战斗:下一步" file="11战斗03下一步.png" note="11战斗03下一步" roi="FULL" fb="SELF"/>
+    <file id="战斗:自动" file="11战斗03自动.png" note="11战斗03自动" roi="FULL" fb="SELF"/>
+    <file id="战斗:一倍" file="11战斗03一倍.png" note="11战斗03一倍" roi="FULL" fb="SELF"/>
+    <file id="战斗:二倍" file="11战斗03二倍.png" note="11战斗03二倍" roi="FULL" fb="SELF"/>
+    <file id="战斗:三倍" file="11战斗03三倍.png" note="11战斗03三倍" roi="FULL" fb="SELF"/>
+
+    <file id="地下城:剩余次数" file="24地下城01剩余挑战次数.png" note="24地下城01剩余挑战次数" roi="FULL" fb="SELF"/>
+    <file id="地下城:次数0/1" file="24地下城01零一.png" note="24地下城01零一" roi="FULL" fb="SELF"/>
+    <file id="地下城:次数1/1" file="24地下城01一一.png" note="24地下城01一一" roi="FULL" fb="SELF"/>
+    <file id="地下城:EX3" file="24地下城EX3.png" note="24地下城EX3" roi="FULL" fb="SELF"/>
+    <file id="地下城:确认地域" file="24地下城01确认按钮.png" note="24地下城01确认按钮" roi="FULL" fb="SELF"/>
+    <file id="地下城:1层" file="24地下城11一层.png" note="24地下城11一层" roi="FULL" fb="SELF"/>
+    <file id="地下城:1/5" file="24地下城11一阶.png" note="24地下城11一阶" roi="FULL" fb="SELF"/>
+    <file id="地下城:2层" file="24地下城12二层.png" note="24地下城12二层" roi="FULL" fb="SELF"/>
+    <file id="地下城:2/5" file="24地下城12二阶.png" note="24地下城12二阶" roi="FULL" fb="SELF"/>
+    <file id="地下城:3层" file="24地下城13三层.png" note="24地下城13三层" roi="FULL" fb="SELF"/>
+    <file id="地下城:3/5" file="24地下城13三阶.png" note="24地下城13三阶" roi="FULL" fb="SELF"/>
+    <file id="地下城:4层" file="24地下城14四层.png" note="24地下城14四层" roi="FULL" fb="SELF"/>
+    <file id="地下城:4/5" file="24地下城14四阶.png" note="24地下城14四阶" roi="FULL" fb="SELF"/>
+
+    <file id="地下城:胜利" file="24地下城02胜利.png" note="24地下城02胜利" roi="FULL" fb="SELF"/>
+    <file id="地下城:报酬窗口" file="24地下城02收取报酬.png" note="24地下城02收取报酬" roi="FULL" fb="SELF"/>
+    <file id="地下城:报酬确认" file="24地下城02确认按钮.png" note="24地下城02确认按钮" roi="FULL" fb="SELF"/>
+    <file id="地下城:5层" file="24地下城15五层.png" note="24地下城15五层" roi="FULL" fb="SELF"/>
+    <file id="地下城:5/5" file="24地下城15五阶.png" note="24地下城15五阶" roi="FULL" fb="SELF"/>
+    <file id="地下城:撤退" file="24地下城16撤退.png" note="24地下城16撤退" roi="FULL" fb="SELF"/>
+    <file id="地下城:撤退窗口" file="24地下城03撤退确认.png" note="24地下城03撤退确认" roi="FULL" fb="SELF"/>
+    <file id="地下城:撤退确认" file="24地下城03确认按钮.png" note="24地下城03确认按钮" roi="FULL" fb="SELF"/>
+
+    <file id="探索:零次0/X" file="24探索01零次.png" note="24探索01零次" roi="FULL" fb="SELF"/>
+    <file id="探索:经验关卡" file="24探索01经验关卡.png" note="24探索01经验关卡" roi="FULL" fb="SELF"/>
+    <file id="探索:玛那关卡" file="24探索01玛那关卡.png" note="24探索01玛那关卡" roi="FULL" fb="SELF"/>
+    <file id="探索:关卡入口" file="24探索03关卡入口.png" note="24探索03关卡入口" roi="FULL" fb="SELF"/>
+    <file id="探索:前往经验" file="24探索04前往经验关卡按钮.png" note="24探索04前往经验关卡按钮" roi="FULL" fb="SELF"/>
+    <file id="探索:前往探索" file="24探索05前往探索首页按钮.png" note="24探索05前往探索首页按钮" roi="FULL" fb="SELF"/>
+
+    <file id="调查:圣迹" file="24调查01圣迹.png" note="24调查01圣迹" roi="FULL" fb="SELF"/>
+    <file id="调查:神殿" file="24调查02神殿.png" note="24调查02神殿" roi="FULL" fb="SELF"/>
+
+    <file id="活动:活动关卡" file="24活动01活动关卡.png" note="24活动01活动关卡" roi="FULL" fb="SELF"/>
+    <file id="活动:首领挑战卷" file="24活动01首领挑战卷.png" note="24活动01首领挑战卷" roi="FULL" fb="SELF"/>
+    <file id="主线:普通" file="24主线01普通.png" note="24主线01普通" roi="FULL" fb="SELF"/>
+    <file id="主线:普通" file="24主线01普通选中.png" note="24主线01普通选中" roi="FULL" fb="SELF"/>
+    <file id="主线:困难" file="24主线02困难.png" note="24主线02困难" roi="FULL" fb="SELF"/>
+    <file id="主线:困难" file="24主线02困难选中.png" note="24主线02困难选中" roi="FULL" fb="SELF"/>
+    <file id="主线:高难" file="24主线03高难.png" note="24主线03高难" roi="FULL" fb="SELF"/>
+    <file id="主线:高难" file="24主线03高难选中.png" note="24主线03高难选中" roi="FULL" fb="SELF"/>
+
+    <file id="竞技场:收取" file="24竞技场01收取.png" note="24竞技场01收取" roi="FULL" fb="SELF"/>
+    <file id="竞技场:冷却完成" file="24竞技场01冷却完成.png" note="24竞技场01冷却完成" roi="FULL" fb="SELF"/>
+    <file id="竞技场:选择对手" file="24竞技场11选择对手.png" note="24竞技场11选择对手" roi="FULL" fb="SELF"/>
+    <file id="竞技场:编组时间" file="24竞技场12编组时间.png" note="24竞技场12编组时间" roi="FULL" fb="SELF"/>
+    <file id="竞技场:队伍123" file="24竞技场12队伍X.png" note="24竞技场12队伍X" roi="FULL" fb="SELF"/>
+    <file id="竞技场:战斗开始" file="24竞技场12战斗开始.png" note="24竞技场12战斗开始" roi="FULL" fb="SELF"/>
+    <file id="竞技场:跳过" file="24竞技场13跳过.png" note="24竞技场13跳过" roi="FULL" fb="SELF"/>
+    <file id="竞技场:下一步" file="24竞技场14下一步按钮.png" note="24竞技场14下一步按钮" roi="FULL" fb="SELF"/>
+
+    <file id="通用:返回" file="30全局01返回.png" note="30全局01返回" roi="FULL" fb="SELF"/>
+    <file id="通用:载入中" file="30通用01载入中.png" note="30通用01载入中" roi="FULL" fb="SELF"/>
+</pcr>

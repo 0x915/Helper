@@ -1,0 +1,30 @@
+# CMake generation dependency list for this directory.
+C:/JetBrains/CLion 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/CMakeCInformation.cmake
+C:/JetBrains/CLion 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/CMakeCXXInformation.cmake
+C:/JetBrains/CLion 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/CMakeCommonLanguageInclude.cmake
+C:/JetBrains/CLion 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/CMakeGenericSystem.cmake
+C:/JetBrains/CLion 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/CMakeInitializeConfigs.cmake
+C:/JetBrains/CLion 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/CMakeLanguageInformation.cmake
+C:/JetBrains/CLion 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/CMakeRCInformation.cmake
+C:/JetBrains/CLion 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/CMakeSystemSpecificInformation.cmake
+C:/JetBrains/CLion 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/CMakeSystemSpecificInitialize.cmake
+C:/JetBrains/CLion 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/JetBrains/CLion 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/Compiler/MSVC-C.cmake
+C:/JetBrains/CLion 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/Compiler/MSVC-CXX.cmake
+C:/JetBrains/CLion 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/FindPackageHandleStandardArgs.cmake
+C:/JetBrains/CLion 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/FindPackageMessage.cmake
+C:/JetBrains/CLion 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-MSVC-C.cmake
+C:/JetBrains/CLion 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-MSVC-CXX.cmake
+C:/JetBrains/CLion 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-MSVC.cmake
+C:/JetBrains/CLion 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows.cmake
+C:/JetBrains/CLion 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/Platform/WindowsPaths.cmake
+C:/Package/OpenCV/OpenCVConfig-version.cmake
+C:/Package/OpenCV/OpenCVConfig.cmake
+C:/Package/OpenCV/x64/vc17/lib/OpenCVConfig.cmake
+C:/Package/OpenCV/x64/vc17/lib/OpenCVModules-release.cmake
+C:/Package/OpenCV/x64/vc17/lib/OpenCVModules.cmake
+G:/Code/Helper/CMakeLists.txt
+G:/Code/Helper/build/CMakeFiles/3.21.1/CMakeCCompiler.cmake
+G:/Code/Helper/build/CMakeFiles/3.21.1/CMakeCXXCompiler.cmake
+G:/Code/Helper/build/CMakeFiles/3.21.1/CMakeRCCompiler.cmake
+G:/Code/Helper/build/CMakeFiles/3.21.1/CMakeSystem.cmake

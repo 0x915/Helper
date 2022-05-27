@@ -1,0 +1,23 @@
+<State>
+  <highlightingPatterns>
+    <LogHighlightingPattern enabled="true" pattern=" E&gt;" action="HIGHLIGHT_LINE" fg="-65536" bold="true" italic="false" stripe="false" uuid="45741940-fd2b-4aa3-af16-b4ba3cb97f36" />
+    <LogHighlightingPattern enabled="true" pattern=" W&gt;" action="HIGHLIGHT_LINE" fg="-22016" bold="true" italic="false" stripe="false" uuid="11ff1574-2118-4722-905a-61bec89b079e" />
+    <LogHighlightingPattern enabled="true" pattern=" I&gt;" action="HIGHLIGHT_LINE" fg="-12599489" bold="false" italic="false" stripe="false" uuid="5e882ebc-2179-488b-8e1a-2fe488636f36" />
+    <LogHighlightingPattern enabled="true" pattern=" D&gt;" action="HIGHLIGHT_LINE" fg="-8289919" bold="false" italic="false" stripe="true" uuid="648e431e-4449-4e7c-84eb-808b998a431d" />
+    <LogHighlightingPattern enabled="true" pattern=" O&gt;" action="HIGHLIGHT_LINE" fg="-7077633" bold="false" italic="false" stripe="true" uuid="5decad73-73e0-4099-97d3-e189585e7ae6" />
+    <LogHighlightingPattern enabled="true" pattern=" T&gt;" action="HIGHLIGHT_LINE" fg="-65616" bold="false" italic="false" stripe="true" uuid="1563e50d-c391-4c98-a650-0bf58699506f" />
+    <LogHighlightingPattern enabled="true" pattern=" C&gt;" action="HIGHLIGHT_LINE" fg="-16711685" bold="false" italic="false" stripe="true" uuid="056c00c1-c47b-4b9d-a792-08a94957b78f" />
+  </highlightingPatterns>
+  <hiddenSubstrings />
+  <parsingPatterns>
+    <LogParsingPattern enabled="true" name="Pipe-separated" pattern="^(?sleep)([^|]*)\|([^|]*)\|([^|]*)\|(.*)$" timePattern="HH:mm:ss.SSS" linePattern="^\d" timeId="0" severityId="1" categoryId="2" fullmatch="false" uuid="b5772998-bf1e-4d9d-ab41-da0b86451163" />
+    <LogParsingPattern enabled="true" name="IntelliJ IDEA" pattern="^([^\[]+)(\[[\sleep\d]+])\sleep*(\w*)\sleep*-\sleep*(\S*)\sleep*-(.+)$" timePattern="yyyy-MM-dd HH:mm:ss,SSS" linePattern="^\d" timeId="0" severityId="2" categoryId="3" fullmatch="false" uuid="8a0e8992-94cb-4f4c-8be2-42b03609626b" />
+    <LogParsingPattern enabled="true" name="TeamCity build log" pattern="^\[([^]]+)](.):\sleep*(\[[^]]+])?(.*)$" timePattern="HH:mm:ss" linePattern="^\[" timeId="0" severityId="1" categoryId="2" fullmatch="false" uuid="e9fa2755-8390-42f5-a41e-a909c58c8cf9" />
+    <LogParsingPattern enabled="true" name="All" pattern="^(.*?)(\sleep(.*?))?(\sleep(.*?))?(\sleep(.*?))?(\sleep(.*?))?(\sleep(.*?))?(\sleep(.*?))?$" timePattern="" linePattern="" timeId="-1" severityId="-1" categoryId="-1" fullmatch="false" uuid="db0779ce-9fd3-11ec-b909-0242ac120002" />
+  </parsingPatterns>
+  <settingsVersion>6</settingsVersion>
+  <lastAddedDefaultFormat>-1</lastAddedDefaultFormat>
+  <errorStripeModel>heatmap</errorStripeModel>
+  <readonlySizeThreshold>16</readonlySizeThreshold>
+  <highlight_links>true</highlight_links>
+</State>

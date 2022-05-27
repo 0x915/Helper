@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='GB2312'?>
+
+<helper-config>
+    <windows>
+        <white-list>
+            <filter EQ="1" FI="class" VALUE="Qt5QWindowIcon" NOTE="Pass Qt5QWindowIcon MainWindow"/>
+        </white-list>
+        <black-list>
+            <filter EQ="1" FI="title" VALUE="MEmu" NOTE="Exclude MEMU Service"/>
+            <filter EQ="0" FI="title" VALUE="逍遥多开" NOTE="Exclude MEMU Console"/>
+            <filter EQ="1" FI="title" VALUE="NemuService" NOTE="Exclude MUMU Service"/>
+            <filter EQ="1" FI="title" VALUE="NemuPlayer" NOTE="Exclude MUMU MainWindow"/>
+        </black-list>
+        <support>
+            <memu>
+                <ui hidpi="1">
+                    <!-- hidpi:高分屏缩放支持 (内部节点参数均为不缩放下的像素值)  -->
+                    <!-- border:窗口描边的线宽 title:标题栏的高度 widget:工具栏的高度/宽度   -->
+                    <border>1</border>
+                    <title>42</title>
+                    <widget>31</widget>
+                </ui>
+
+            </memu>
+        </support>
+    </windows>
+</helper-config>
+

@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{307A7980-6722-374F-8E4D-20FE9583DE2E}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>Helper</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\Code\Helper\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Helper.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Helper</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\Code\Helper\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Helper.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Helper</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\Code\Helper\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Helper.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Helper</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\Code\Helper\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Helper.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Helper</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>G:\Code\Helper;C:\Package\boost_1_79_0\boost;G:\MSVC\opencv-4.x\build64;G:\MSVC\opencv-4.x\include;G:\MSVC\opencv-4.x\modules\core\include;G:\MSVC\opencv-4.x\modules\flann\include;G:\MSVC\opencv-4.x\modules\imgproc\include;G:\MSVC\opencv_contrib-4.x\modules\intensity_transform\include;G:\MSVC\opencv-4.x\modules\ml\include;G:\MSVC\opencv_contrib-4.x\modules\phase_unwrapping\include;G:\MSVC\opencv-4.x\modules\photo\include;G:\MSVC\opencv_contrib-4.x\modules\plot\include;G:\MSVC\opencv_contrib-4.x\modules\quality\include;G:\MSVC\opencv_contrib-4.x\modules\reg\include;G:\MSVC\opencv_contrib-4.x\modules\surface_matching\include;G:\MSVC\opencv_contrib-4.x\modules\xphoto\include;G:\MSVC\opencv-4.x\modules\dnn\include;G:\MSVC\opencv_contrib-4.x\modules\dnn_superres\include;G:\MSVC\opencv-4.x\modules\features2d\include;G:\MSVC\opencv_contrib-4.x\modules\fuzzy\include;G:\MSVC\opencv_contrib-4.x\modules\hfs\include;G:\MSVC\opencv_contrib-4.x\modules\img_hash\include;G:\MSVC\opencv-4.x\modules\imgcodecs\include;G:\MSVC\opencv_contrib-4.x\modules\line_descriptor\include;G:\MSVC\opencv_contrib-4.x\modules\saliency\include;G:\MSVC\opencv_contrib-4.x\modules\text\include;G:\MSVC\opencv-4.x\modules\videoio\include;G:\MSVC\opencv_contrib-4.x\modules\wechat_qrcode\include;G:\MSVC\opencv_contrib-4.x\modules\barcode\include;G:\MSVC\opencv-4.x\modules\calib3d\include;G:\MSVC\opencv_contrib-4.x\modules\datasets\include;G:\MSVC\opencv-4.x\modules\highgui\include;G:\MSVC\opencv_contrib-4.x\modules\mcc\include;G:\MSVC\opencv-4.x\modules\objdetect\include;G:\MSVC\opencv_contrib-4.x\modules\rapid\include;G:\MSVC\opencv_contrib-4.x\modules\rgbd\include;G:\MSVC\opencv_contrib-4.x\modules\shape\include;G:\MSVC\opencv_contrib-4.x\modules\structured_light\include;G:\MSVC\opencv-4.x\modules\ts\include;G:\MSVC\opencv-4.x\modules\video\include;G:\MSVC\opencv_contrib-4.x\modules\videostab\include;G:\MSVC\opencv_contrib-4.x\modules\xfeatures2d\include;G:\MSVC\opencv_contrib-4.x\modules\ximgproc\include;G:\MSVC\opencv_contrib-4.x\modules\xobjdetect\include;G:\MSVC\opencv_contrib-4.x\modules\aruco\include;G:\MSVC\opencv_contrib-4.x\modules\bgsegm\include;G:\MSVC\opencv_contrib-4.x\modules\bioinspired\include;G:\MSVC\opencv_contrib-4.x\modules\ccalib\include;G:\MSVC\opencv_contrib-4.x\modules\dnn_objdetect\include;G:\MSVC\opencv_contrib-4.x\modules\dpm\include;G:\MSVC\opencv_contrib-4.x\modules\face\include;G:\MSVC\opencv-4.x\modules\gapi\include;G:\MSVC\opencv_contrib-4.x\modules\optflow\include;G:\MSVC\opencv-4.x\modules\stitching\include;G:\MSVC\opencv_contrib-4.x\modules\superres\include;G:\MSVC\opencv_contrib-4.x\modules\tracking\include;G:\MSVC\opencv_contrib-4.x\modules\stereo\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\Code\Helper;C:\Package\boost_1_79_0\boost;G:\MSVC\opencv-4.x\build64;G:\MSVC\opencv-4.x\include;G:\MSVC\opencv-4.x\modules\core\include;G:\MSVC\opencv-4.x\modules\flann\include;G:\MSVC\opencv-4.x\modules\imgproc\include;G:\MSVC\opencv_contrib-4.x\modules\intensity_transform\include;G:\MSVC\opencv-4.x\modules\ml\include;G:\MSVC\opencv_contrib-4.x\modules\phase_unwrapping\include;G:\MSVC\opencv-4.x\modules\photo\include;G:\MSVC\opencv_contrib-4.x\modules\plot\include;G:\MSVC\opencv_contrib-4.x\modules\quality\include;G:\MSVC\opencv_contrib-4.x\modules\reg\include;G:\MSVC\opencv_contrib-4.x\modules\surface_matching\include;G:\MSVC\opencv_contrib-4.x\modules\xphoto\include;G:\MSVC\opencv-4.x\modules\dnn\include;G:\MSVC\opencv_contrib-4.x\modules\dnn_superres\include;G:\MSVC\opencv-4.x\modules\features2d\include;G:\MSVC\opencv_contrib-4.x\modules\fuzzy\include;G:\MSVC\opencv_contrib-4.x\modules\hfs\include;G:\MSVC\opencv_contrib-4.x\modules\img_hash\include;G:\MSVC\opencv-4.x\modules\imgcodecs\include;G:\MSVC\opencv_contrib-4.x\modules\line_descriptor\include;G:\MSVC\opencv_contrib-4.x\modules\saliency\include;G:\MSVC\opencv_contrib-4.x\modules\text\include;G:\MSVC\opencv-4.x\modules\videoio\include;G:\MSVC\opencv_contrib-4.x\modules\wechat_qrcode\include;G:\MSVC\opencv_contrib-4.x\modules\barcode\include;G:\MSVC\opencv-4.x\modules\calib3d\include;G:\MSVC\opencv_contrib-4.x\modules\datasets\include;G:\MSVC\opencv-4.x\modules\highgui\include;G:\MSVC\opencv_contrib-4.x\modules\mcc\include;G:\MSVC\opencv-4.x\modules\objdetect\include;G:\MSVC\opencv_contrib-4.x\modules\rapid\include;G:\MSVC\opencv_contrib-4.x\modules\rgbd\include;G:\MSVC\opencv_contrib-4.x\modules\shape\include;G:\MSVC\opencv_contrib-4.x\modules\structured_light\include;G:\MSVC\opencv-4.x\modules\ts\include;G:\MSVC\opencv-4.x\modules\video\include;G:\MSVC\opencv_contrib-4.x\modules\videostab\include;G:\MSVC\opencv_contrib-4.x\modules\xfeatures2d\include;G:\MSVC\opencv_contrib-4.x\modules\ximgproc\include;G:\MSVC\opencv_contrib-4.x\modules\xobjdetect\include;G:\MSVC\opencv_contrib-4.x\modules\aruco\include;G:\MSVC\opencv_contrib-4.x\modules\bgsegm\include;G:\MSVC\opencv_contrib-4.x\modules\bioinspired\include;G:\MSVC\opencv_contrib-4.x\modules\ccalib\include;G:\MSVC\opencv_contrib-4.x\modules\dnn_objdetect\include;G:\MSVC\opencv_contrib-4.x\modules\dpm\include;G:\MSVC\opencv_contrib-4.x\modules\face\include;G:\MSVC\opencv-4.x\modules\gapi\include;G:\MSVC\opencv_contrib-4.x\modules\optflow\include;G:\MSVC\opencv-4.x\modules\stitching\include;G:\MSVC\opencv_contrib-4.x\modules\superres\include;G:\MSVC\opencv_contrib-4.x\modules\tracking\include;G:\MSVC\opencv_contrib-4.x\modules\stereo\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\Code\Helper;C:\Package\boost_1_79_0\boost;G:\MSVC\opencv-4.x\build64;G:\MSVC\opencv-4.x\include;G:\MSVC\opencv-4.x\modules\core\include;G:\MSVC\opencv-4.x\modules\flann\include;G:\MSVC\opencv-4.x\modules\imgproc\include;G:\MSVC\opencv_contrib-4.x\modules\intensity_transform\include;G:\MSVC\opencv-4.x\modules\ml\include;G:\MSVC\opencv_contrib-4.x\modules\phase_unwrapping\include;G:\MSVC\opencv-4.x\modules\photo\include;G:\MSVC\opencv_contrib-4.x\modules\plot\include;G:\MSVC\opencv_contrib-4.x\modules\quality\include;G:\MSVC\opencv_contrib-4.x\modules\reg\include;G:\MSVC\opencv_contrib-4.x\modules\surface_matching\include;G:\MSVC\opencv_contrib-4.x\modules\xphoto\include;G:\MSVC\opencv-4.x\modules\dnn\include;G:\MSVC\opencv_contrib-4.x\modules\dnn_superres\include;G:\MSVC\opencv-4.x\modules\features2d\include;G:\MSVC\opencv_contrib-4.x\modules\fuzzy\include;G:\MSVC\opencv_contrib-4.x\modules\hfs\include;G:\MSVC\opencv_contrib-4.x\modules\img_hash\include;G:\MSVC\opencv-4.x\modules\imgcodecs\include;G:\MSVC\opencv_contrib-4.x\modules\line_descriptor\include;G:\MSVC\opencv_contrib-4.x\modules\saliency\include;G:\MSVC\opencv_contrib-4.x\modules\text\include;G:\MSVC\opencv-4.x\modules\videoio\include;G:\MSVC\opencv_contrib-4.x\modules\wechat_qrcode\include;G:\MSVC\opencv_contrib-4.x\modules\barcode\include;G:\MSVC\opencv-4.x\modules\calib3d\include;G:\MSVC\opencv_contrib-4.x\modules\datasets\include;G:\MSVC\opencv-4.x\modules\highgui\include;G:\MSVC\opencv_contrib-4.x\modules\mcc\include;G:\MSVC\opencv-4.x\modules\objdetect\include;G:\MSVC\opencv_contrib-4.x\modules\rapid\include;G:\MSVC\opencv_contrib-4.x\modules\rgbd\include;G:\MSVC\opencv_contrib-4.x\modules\shape\include;G:\MSVC\opencv_contrib-4.x\modules\structured_light\include;G:\MSVC\opencv-4.x\modules\ts\include;G:\MSVC\opencv-4.x\modules\video\include;G:\MSVC\opencv_contrib-4.x\modules\videostab\include;G:\MSVC\opencv_contrib-4.x\modules\xfeatures2d\include;G:\MSVC\opencv_contrib-4.x\modules\ximgproc\include;G:\MSVC\opencv_contrib-4.x\modules\xobjdetect\include;G:\MSVC\opencv_contrib-4.x\modules\aruco\include;G:\MSVC\opencv_contrib-4.x\modules\bgsegm\include;G:\MSVC\opencv_contrib-4.x\modules\bioinspired\include;G:\MSVC\opencv_contrib-4.x\modules\ccalib\include;G:\MSVC\opencv_contrib-4.x\modules\dnn_objdetect\include;G:\MSVC\opencv_contrib-4.x\modules\dpm\include;G:\MSVC\opencv_contrib-4.x\modules\face\include;G:\MSVC\opencv-4.x\modules\gapi\include;G:\MSVC\opencv_contrib-4.x\modules\optflow\include;G:\MSVC\opencv-4.x\modules\stitching\include;G:\MSVC\opencv_contrib-4.x\modules\superres\include;G:\MSVC\opencv_contrib-4.x\modules\tracking\include;G:\MSVC\opencv_contrib-4.x\modules\stereo\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>G:\MSVC\opencv-4.x\build64\lib\Debug\opencv_gapi455d.lib;G:\MSVC\opencv-4.x\build64\lib\Debug\opencv_stitching455d.lib;G:\MSVC\opencv-4.x\build64\lib\Debug\opencv_aruco455d.lib;G:\MSVC\opencv-4.x\build64\lib\Debug\opencv_barcode455d.lib;G:\MSVC\opencv-4.x\build64\lib\Debug\opencv_bgsegm455d.lib;G:\MSVC\opencv-4.x\build64\lib\Debug\opencv_bioinspired455d.lib;G:\MSVC\opencv-4.x\build64\lib\Debug\opencv_ccalib455d.lib;G:\MSVC\opencv-4.x\build64\lib\Debug\opencv_dnn_objdetect455d.lib;G:\MSVC\opencv-4.x\build64\lib\Debug\opencv_dnn_superres455d.lib;G:\MSVC\opencv-4.x\build64\lib\Debug\opencv_dpm455d.lib;G:\MSVC\opencv-4.x\build64\lib\Debug\opencv_face455d.lib;G:\MSVC\opencv-4.x\build64\lib\Debug\opencv_fuzzy455d.lib;G:\MSVC\opencv-4.x\build64\lib\Debug\opencv_hfs455d.lib;G:\MSVC\opencv-4.x\build64\lib\Debug\opencv_img_hash455d.lib;G:\MSVC\opencv-4.x\build64\lib\Debug\opencv_intensity_transform455d.lib;G:\MSVC\opencv-4.x\build64\lib\Debug\opencv_line_descriptor455d.lib;G:\MSVC\opencv-4.x\build64\lib\Debug\opencv_mcc455d.lib;G:\MSVC\opencv-4.x\build64\lib\Debug\opencv_quality455d.lib;G:\MSVC\opencv-4.x\build64\lib\Debug\opencv_rapid455d.lib;G:\MSVC\opencv-4.x\build64\lib\Debug\opencv_reg455d.lib;G:\MSVC\opencv-4.x\build64\lib\Debug\opencv_rgbd455d.lib;G:\MSVC\opencv-4.x\build64\lib\Debug\opencv_saliency455d.lib;G:\MSVC\opencv-4.x\build64\lib\Debug\opencv_stereo455d.lib;G:\MSVC\opencv-4.x\build64\lib\Debug\opencv_structured_light455d.lib;G:\MSVC\opencv-4.x\build64\lib\Debug\opencv_superres455d.lib;G:\MSVC\opencv-4.x\build64\lib\Debug\opencv_surface_matching455d.lib;G:\MSVC\opencv-4.x\build64\lib\Debug\opencv_tracking455d.lib;G:\MSVC\opencv-4.x\build64\lib\Debug\opencv_videostab455d.lib;G:\MSVC\opencv-4.x\build64\lib\Debug\opencv_wechat_qrcode455d.lib;G:\MSVC\opencv-4.x\build64\lib\Debug\opencv_xfeatures2d455d.lib;G:\MSVC\opencv-4.x\build64\lib\Debug\opencv_xobjdetect455d.lib;G:\MSVC\opencv-4.x\build64\lib\Debug\opencv_xphoto455d.lib;G:\MSVC\opencv-4.x\build64\lib\Debug\opencv_shape455d.lib;G:\MSVC\opencv-4.x\build64\lib\Debug\opencv_highgui455d.lib;G:\MSVC\opencv-4.x\build64\lib\Debug\opencv_datasets455d.lib;G:\MSVC\opencv-4.x\build64\lib\Debug\opencv_plot455d.lib;G:\MSVC\opencv-4.x\build64\lib\Debug\opencv_text455d.lib;G:\MSVC\opencv-4.x\build64\lib\Debug\opencv_ml455d.lib;G:\MSVC\opencv-4.x\build64\lib\Debug\opencv_phase_unwrapping455d.lib;G:\MSVC\opencv-4.x\build64\lib\Debug\opencv_optflow455d.lib;G:\MSVC\opencv-4.x\build64\lib\Debug\opencv_ximgproc455d.lib;G:\MSVC\opencv-4.x\build64\lib\Debug\opencv_video455d.lib;G:\MSVC\opencv-4.x\build64\lib\Debug\opencv_videoio455d.lib;G:\MSVC\opencv-4.x\build64\lib\Debug\opencv_imgcodecs455d.lib;G:\MSVC\opencv-4.x\build64\lib\Debug\opencv_objdetect455d.lib;G:\MSVC\opencv-4.x\build64\lib\Debug\opencv_calib3d455d.lib;G:\MSVC\opencv-4.x\build64\lib\Debug\opencv_dnn455d.lib;G:\MSVC\opencv-4.x\build64\lib\Debug\opencv_features2d455d.lib;G:\MSVC\opencv-4.x\build64\lib\Debug\opencv_flann455d.lib;G:\MSVC\opencv-4.x\build64\lib\Debug\opencv_photo455d.lib;G:\MSVC\opencv-4.x\build64\lib\Debug\opencv_imgproc455d.lib;G:\MSVC\opencv-4.x\build64\lib\Debug\opencv_core455d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Package/boost_1_79_0/lib64-msvc-14.3;C:/Package/boost_1_79_0/lib64-msvc-14.3/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>G:/Code/Helper/build/Debug/Helper.lib</ImportLibrary>
+      <ProgramDataBaseFile>G:/Code/Helper/build/Debug/Helper.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>G:\Code\Helper;C:\Package\boost_1_79_0\boost;G:\MSVC\opencv-4.x\build64;G:\MSVC\opencv-4.x\include;G:\MSVC\opencv-4.x\modules\core\include;G:\MSVC\opencv-4.x\modules\flann\include;G:\MSVC\opencv-4.x\modules\imgproc\include;G:\MSVC\opencv_contrib-4.x\modules\intensity_transform\include;G:\MSVC\opencv-4.x\modules\ml\include;G:\MSVC\opencv_contrib-4.x\modules\phase_unwrapping\include;G:\MSVC\opencv-4.x\modules\photo\include;G:\MSVC\opencv_contrib-4.x\modules\plot\include;G:\MSVC\opencv_contrib-4.x\modules\quality\include;G:\MSVC\opencv_contrib-4.x\modules\reg\include;G:\MSVC\opencv_contrib-4.x\modules\surface_matching\include;G:\MSVC\opencv_contrib-4.x\modules\xphoto\include;G:\MSVC\opencv-4.x\modules\dnn\include;G:\MSVC\opencv_contrib-4.x\modules\dnn_superres\include;G:\MSVC\opencv-4.x\modules\features2d\include;G:\MSVC\opencv_contrib-4.x\modules\fuzzy\include;G:\MSVC\opencv_contrib-4.x\modules\hfs\include;G:\MSVC\opencv_contrib-4.x\modules\img_hash\include;G:\MSVC\opencv-4.x\modules\imgcodecs\include;G:\MSVC\opencv_contrib-4.x\modules\line_descriptor\include;G:\MSVC\opencv_contrib-4.x\modules\saliency\include;G:\MSVC\opencv_contrib-4.x\modules\text\include;G:\MSVC\opencv-4.x\modules\videoio\include;G:\MSVC\opencv_contrib-4.x\modules\wechat_qrcode\include;G:\MSVC\opencv_contrib-4.x\modules\barcode\include;G:\MSVC\opencv-4.x\modules\calib3d\include;G:\MSVC\opencv_contrib-4.x\modules\datasets\include;G:\MSVC\opencv-4.x\modules\highgui\include;G:\MSVC\opencv_contrib-4.x\modules\mcc\include;G:\MSVC\opencv-4.x\modules\objdetect\include;G:\MSVC\opencv_contrib-4.x\modules\rapid\include;G:\MSVC\opencv_contrib-4.x\modules\rgbd\include;G:\MSVC\opencv_contrib-4.x\modules\shape\include;G:\MSVC\opencv_contrib-4.x\modules\structured_light\include;G:\MSVC\opencv-4.x\modules\ts\include;G:\MSVC\opencv-4.x\modules\video\include;G:\MSVC\opencv_contrib-4.x\modules\videostab\include;G:\MSVC\opencv_contrib-4.x\modules\xfeatures2d\include;G:\MSVC\opencv_contrib-4.x\modules\ximgproc\include;G:\MSVC\opencv_contrib-4.x\modules\xobjdetect\include;G:\MSVC\opencv_contrib-4.x\modules\aruco\include;G:\MSVC\opencv_contrib-4.x\modules\bgsegm\include;G:\MSVC\opencv_contrib-4.x\modules\bioinspired\include;G:\MSVC\opencv_contrib-4.x\modules\ccalib\include;G:\MSVC\opencv_contrib-4.x\modules\dnn_objdetect\include;G:\MSVC\opencv_contrib-4.x\modules\dpm\include;G:\MSVC\opencv_contrib-4.x\modules\face\include;G:\MSVC\opencv-4.x\modules\gapi\include;G:\MSVC\opencv_contrib-4.x\modules\optflow\include;G:\MSVC\opencv-4.x\modules\stitching\include;G:\MSVC\opencv_contrib-4.x\modules\superres\include;G:\MSVC\opencv_contrib-4.x\modules\tracking\include;G:\MSVC\opencv_contrib-4.x\modules\stereo\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\Code\Helper;C:\Package\boost_1_79_0\boost;G:\MSVC\opencv-4.x\build64;G:\MSVC\opencv-4.x\include;G:\MSVC\opencv-4.x\modules\core\include;G:\MSVC\opencv-4.x\modules\flann\include;G:\MSVC\opencv-4.x\modules\imgproc\include;G:\MSVC\opencv_contrib-4.x\modules\intensity_transform\include;G:\MSVC\opencv-4.x\modules\ml\include;G:\MSVC\opencv_contrib-4.x\modules\phase_unwrapping\include;G:\MSVC\opencv-4.x\modules\photo\include;G:\MSVC\opencv_contrib-4.x\modules\plot\include;G:\MSVC\opencv_contrib-4.x\modules\quality\include;G:\MSVC\opencv_contrib-4.x\modules\reg\include;G:\MSVC\opencv_contrib-4.x\modules\surface_matching\include;G:\MSVC\opencv_contrib-4.x\modules\xphoto\include;G:\MSVC\opencv-4.x\modules\dnn\include;G:\MSVC\opencv_contrib-4.x\modules\dnn_superres\include;G:\MSVC\opencv-4.x\modules\features2d\include;G:\MSVC\opencv_contrib-4.x\modules\fuzzy\include;G:\MSVC\opencv_contrib-4.x\modules\hfs\include;G:\MSVC\opencv_contrib-4.x\modules\img_hash\include;G:\MSVC\opencv-4.x\modules\imgcodecs\include;G:\MSVC\opencv_contrib-4.x\modules\line_descriptor\include;G:\MSVC\opencv_contrib-4.x\modules\saliency\include;G:\MSVC\opencv_contrib-4.x\modules\text\include;G:\MSVC\opencv-4.x\modules\videoio\include;G:\MSVC\opencv_contrib-4.x\modules\wechat_qrcode\include;G:\MSVC\opencv_contrib-4.x\modules\barcode\include;G:\MSVC\opencv-4.x\modules\calib3d\include;G:\MSVC\opencv_contrib-4.x\modules\datasets\include;G:\MSVC\opencv-4.x\modules\highgui\include;G:\MSVC\opencv_contrib-4.x\modules\mcc\include;G:\MSVC\opencv-4.x\modules\objdetect\include;G:\MSVC\opencv_contrib-4.x\modules\rapid\include;G:\MSVC\opencv_contrib-4.x\modules\rgbd\include;G:\MSVC\opencv_contrib-4.x\modules\shape\include;G:\MSVC\opencv_contrib-4.x\modules\structured_light\include;G:\MSVC\opencv-4.x\modules\ts\include;G:\MSVC\opencv-4.x\modules\video\include;G:\MSVC\opencv_contrib-4.x\modules\videostab\include;G:\MSVC\opencv_contrib-4.x\modules\xfeatures2d\include;G:\MSVC\opencv_contrib-4.x\modules\ximgproc\include;G:\MSVC\opencv_contrib-4.x\modules\xobjdetect\include;G:\MSVC\opencv_contrib-4.x\modules\aruco\include;G:\MSVC\opencv_contrib-4.x\modules\bgsegm\include;G:\MSVC\opencv_contrib-4.x\modules\bioinspired\include;G:\MSVC\opencv_contrib-4.x\modules\ccalib\include;G:\MSVC\opencv_contrib-4.x\modules\dnn_objdetect\include;G:\MSVC\opencv_contrib-4.x\modules\dpm\include;G:\MSVC\opencv_contrib-4.x\modules\face\include;G:\MSVC\opencv-4.x\modules\gapi\include;G:\MSVC\opencv_contrib-4.x\modules\optflow\include;G:\MSVC\opencv-4.x\modules\stitching\include;G:\MSVC\opencv_contrib-4.x\modules\superres\include;G:\MSVC\opencv_contrib-4.x\modules\tracking\include;G:\MSVC\opencv_contrib-4.x\modules\stereo\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\Code\Helper;C:\Package\boost_1_79_0\boost;G:\MSVC\opencv-4.x\build64;G:\MSVC\opencv-4.x\include;G:\MSVC\opencv-4.x\modules\core\include;G:\MSVC\opencv-4.x\modules\flann\include;G:\MSVC\opencv-4.x\modules\imgproc\include;G:\MSVC\opencv_contrib-4.x\modules\intensity_transform\include;G:\MSVC\opencv-4.x\modules\ml\include;G:\MSVC\opencv_contrib-4.x\modules\phase_unwrapping\include;G:\MSVC\opencv-4.x\modules\photo\include;G:\MSVC\opencv_contrib-4.x\modules\plot\include;G:\MSVC\opencv_contrib-4.x\modules\quality\include;G:\MSVC\opencv_contrib-4.x\modules\reg\include;G:\MSVC\opencv_contrib-4.x\modules\surface_matching\include;G:\MSVC\opencv_contrib-4.x\modules\xphoto\include;G:\MSVC\opencv-4.x\modules\dnn\include;G:\MSVC\opencv_contrib-4.x\modules\dnn_superres\include;G:\MSVC\opencv-4.x\modules\features2d\include;G:\MSVC\opencv_contrib-4.x\modules\fuzzy\include;G:\MSVC\opencv_contrib-4.x\modules\hfs\include;G:\MSVC\opencv_contrib-4.x\modules\img_hash\include;G:\MSVC\opencv-4.x\modules\imgcodecs\include;G:\MSVC\opencv_contrib-4.x\modules\line_descriptor\include;G:\MSVC\opencv_contrib-4.x\modules\saliency\include;G:\MSVC\opencv_contrib-4.x\modules\text\include;G:\MSVC\opencv-4.x\modules\videoio\include;G:\MSVC\opencv_contrib-4.x\modules\wechat_qrcode\include;G:\MSVC\opencv_contrib-4.x\modules\barcode\include;G:\MSVC\opencv-4.x\modules\calib3d\include;G:\MSVC\opencv_contrib-4.x\modules\datasets\include;G:\MSVC\opencv-4.x\modules\highgui\include;G:\MSVC\opencv_contrib-4.x\modules\mcc\include;G:\MSVC\opencv-4.x\modules\objdetect\include;G:\MSVC\opencv_contrib-4.x\modules\rapid\include;G:\MSVC\opencv_contrib-4.x\modules\rgbd\include;G:\MSVC\opencv_contrib-4.x\modules\shape\include;G:\MSVC\opencv_contrib-4.x\modules\structured_light\include;G:\MSVC\opencv-4.x\modules\ts\include;G:\MSVC\opencv-4.x\modules\video\include;G:\MSVC\opencv_contrib-4.x\modules\videostab\include;G:\MSVC\opencv_contrib-4.x\modules\xfeatures2d\include;G:\MSVC\opencv_contrib-4.x\modules\ximgproc\include;G:\MSVC\opencv_contrib-4.x\modules\xobjdetect\include;G:\MSVC\opencv_contrib-4.x\modules\aruco\include;G:\MSVC\opencv_contrib-4.x\modules\bgsegm\include;G:\MSVC\opencv_contrib-4.x\modules\bioinspired\include;G:\MSVC\opencv_contrib-4.x\modules\ccalib\include;G:\MSVC\opencv_contrib-4.x\modules\dnn_objdetect\include;G:\MSVC\opencv_contrib-4.x\modules\dpm\include;G:\MSVC\opencv_contrib-4.x\modules\face\include;G:\MSVC\opencv-4.x\modules\gapi\include;G:\MSVC\opencv_contrib-4.x\modules\optflow\include;G:\MSVC\opencv-4.x\modules\stitching\include;G:\MSVC\opencv_contrib-4.x\modules\superres\include;G:\MSVC\opencv_contrib-4.x\modules\tracking\include;G:\MSVC\opencv_contrib-4.x\modules\stereo\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>G:\MSVC\opencv-4.x\build64\lib\Release\opencv_gapi455.lib;G:\MSVC\opencv-4.x\build64\lib\Release\opencv_stitching455.lib;G:\MSVC\opencv-4.x\build64\lib\Release\opencv_aruco455.lib;G:\MSVC\opencv-4.x\build64\lib\Release\opencv_barcode455.lib;G:\MSVC\opencv-4.x\build64\lib\Release\opencv_bgsegm455.lib;G:\MSVC\opencv-4.x\build64\lib\Release\opencv_bioinspired455.lib;G:\MSVC\opencv-4.x\build64\lib\Release\opencv_ccalib455.lib;G:\MSVC\opencv-4.x\build64\lib\Release\opencv_dnn_objdetect455.lib;G:\MSVC\opencv-4.x\build64\lib\Release\opencv_dnn_superres455.lib;G:\MSVC\opencv-4.x\build64\lib\Release\opencv_dpm455.lib;G:\MSVC\opencv-4.x\build64\lib\Release\opencv_face455.lib;G:\MSVC\opencv-4.x\build64\lib\Release\opencv_fuzzy455.lib;G:\MSVC\opencv-4.x\build64\lib\Release\opencv_hfs455.lib;G:\MSVC\opencv-4.x\build64\lib\Release\opencv_img_hash455.lib;G:\MSVC\opencv-4.x\build64\lib\Release\opencv_intensity_transform455.lib;G:\MSVC\opencv-4.x\build64\lib\Release\opencv_line_descriptor455.lib;G:\MSVC\opencv-4.x\build64\lib\Release\opencv_mcc455.lib;G:\MSVC\opencv-4.x\build64\lib\Release\opencv_quality455.lib;G:\MSVC\opencv-4.x\build64\lib\Release\opencv_rapid455.lib;G:\MSVC\opencv-4.x\build64\lib\Release\opencv_reg455.lib;G:\MSVC\opencv-4.x\build64\lib\Release\opencv_rgbd455.lib;G:\MSVC\opencv-4.x\build64\lib\Release\opencv_saliency455.lib;G:\MSVC\opencv-4.x\build64\lib\Release\opencv_stereo455.lib;G:\MSVC\opencv-4.x\build64\lib\Release\opencv_structured_light455.lib;G:\MSVC\opencv-4.x\build64\lib\Release\opencv_superres455.lib;G:\MSVC\opencv-4.x\build64\lib\Release\opencv_surface_matching455.lib;G:\MSVC\opencv-4.x\build64\lib\Release\opencv_tracking455.lib;G:\MSVC\opencv-4.x\build64\lib\Release\opencv_videostab455.lib;G:\MSVC\opencv-4.x\build64\lib\Release\opencv_wechat_qrcode455.lib;G:\MSVC\opencv-4.x\build64\lib\Release\opencv_xfeatures2d455.lib;G:\MSVC\opencv-4.x\build64\lib\Release\opencv_xobjdetect455.lib;G:\MSVC\opencv-4.x\build64\lib\Release\opencv_xphoto455.lib;G:\MSVC\opencv-4.x\build64\lib\Release\opencv_shape455.lib;G:\MSVC\opencv-4.x\build64\lib\Release\opencv_highgui455.lib;G:\MSVC\opencv-4.x\build64\lib\Release\opencv_datasets455.lib;G:\MSVC\opencv-4.x\build64\lib\Release\opencv_plot455.lib;G:\MSVC\opencv-4.x\build64\lib\Release\opencv_text455.lib;G:\MSVC\opencv-4.x\build64\lib\Release\opencv_ml455.lib;G:\MSVC\opencv-4.x\build64\lib\Release\opencv_phase_unwrapping455.lib;G:\MSVC\opencv-4.x\build64\lib\Release\opencv_optflow455.lib;G:\MSVC\opencv-4.x\build64\lib\Release\opencv_ximgproc455.lib;G:\MSVC\opencv-4.x\build64\lib\Release\opencv_video455.lib;G:\MSVC\opencv-4.x\build64\lib\Release\opencv_videoio455.lib;G:\MSVC\opencv-4.x\build64\lib\Release\opencv_imgcodecs455.lib;G:\MSVC\opencv-4.x\build64\lib\Release\opencv_objdetect455.lib;G:\MSVC\opencv-4.x\build64\lib\Release\opencv_calib3d455.lib;G:\MSVC\opencv-4.x\build64\lib\Release\opencv_dnn455.lib;G:\MSVC\opencv-4.x\build64\lib\Release\opencv_features2d455.lib;G:\MSVC\opencv-4.x\build64\lib\Release\opencv_flann455.lib;G:\MSVC\opencv-4.x\build64\lib\Release\opencv_photo455.lib;G:\MSVC\opencv-4.x\build64\lib\Release\opencv_imgproc455.lib;G:\MSVC\opencv-4.x\build64\lib\Release\opencv_core455.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Package/boost_1_79_0/lib64-msvc-14.3;C:/Package/boost_1_79_0/lib64-msvc-14.3/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>G:/Code/Helper/build/Release/Helper.lib</ImportLibrary>
+      <ProgramDataBaseFile>G:/Code/Helper/build/Release/Helper.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>G:\Code\Helper;C:\Package\boost_1_79_0\boost;G:\MSVC\opencv-4.x\build64;G:\MSVC\opencv-4.x\include;G:\MSVC\opencv-4.x\modules\core\include;G:\MSVC\opencv-4.x\modules\flann\include;G:\MSVC\opencv-4.x\modules\imgproc\include;G:\MSVC\opencv_contrib-4.x\modules\intensity_transform\include;G:\MSVC\opencv-4.x\modules\ml\include;G:\MSVC\opencv_contrib-4.x\modules\phase_unwrapping\include;G:\MSVC\opencv-4.x\modules\photo\include;G:\MSVC\opencv_contrib-4.x\modules\plot\include;G:\MSVC\opencv_contrib-4.x\modules\quality\include;G:\MSVC\opencv_contrib-4.x\modules\reg\include;G:\MSVC\opencv_contrib-4.x\modules\surface_matching\include;G:\MSVC\opencv_contrib-4.x\modules\xphoto\include;G:\MSVC\opencv-4.x\modules\dnn\include;G:\MSVC\opencv_contrib-4.x\modules\dnn_superres\include;G:\MSVC\opencv-4.x\modules\features2d\include;G:\MSVC\opencv_contrib-4.x\modules\fuzzy\include;G:\MSVC\opencv_contrib-4.x\modules\hfs\include;G:\MSVC\opencv_contrib-4.x\modules\img_hash\include;G:\MSVC\opencv-4.x\modules\imgcodecs\include;G:\MSVC\opencv_contrib-4.x\modules\line_descriptor\include;G:\MSVC\opencv_contrib-4.x\modules\saliency\include;G:\MSVC\opencv_contrib-4.x\modules\text\include;G:\MSVC\opencv-4.x\modules\videoio\include;G:\MSVC\opencv_contrib-4.x\modules\wechat_qrcode\include;G:\MSVC\opencv_contrib-4.x\modules\barcode\include;G:\MSVC\opencv-4.x\modules\calib3d\include;G:\MSVC\opencv_contrib-4.x\modules\datasets\include;G:\MSVC\opencv-4.x\modules\highgui\include;G:\MSVC\opencv_contrib-4.x\modules\mcc\include;G:\MSVC\opencv-4.x\modules\objdetect\include;G:\MSVC\opencv_contrib-4.x\modules\rapid\include;G:\MSVC\opencv_contrib-4.x\modules\rgbd\include;G:\MSVC\opencv_contrib-4.x\modules\shape\include;G:\MSVC\opencv_contrib-4.x\modules\structured_light\include;G:\MSVC\opencv-4.x\modules\ts\include;G:\MSVC\opencv-4.x\modules\video\include;G:\MSVC\opencv_contrib-4.x\modules\videostab\include;G:\MSVC\opencv_contrib-4.x\modules\xfeatures2d\include;G:\MSVC\opencv_contrib-4.x\modules\ximgproc\include;G:\MSVC\opencv_contrib-4.x\modules\xobjdetect\include;G:\MSVC\opencv_contrib-4.x\modules\aruco\include;G:\MSVC\opencv_contrib-4.x\modules\bgsegm\include;G:\MSVC\opencv_contrib-4.x\modules\bioinspired\include;G:\MSVC\opencv_contrib-4.x\modules\ccalib\include;G:\MSVC\opencv_contrib-4.x\modules\dnn_objdetect\include;G:\MSVC\opencv_contrib-4.x\modules\dpm\include;G:\MSVC\opencv_contrib-4.x\modules\face\include;G:\MSVC\opencv-4.x\modules\gapi\include;G:\MSVC\opencv_contrib-4.x\modules\optflow\include;G:\MSVC\opencv-4.x\modules\stitching\include;G:\MSVC\opencv_contrib-4.x\modules\superres\include;G:\MSVC\opencv_contrib-4.x\modules\tracking\include;G:\MSVC\opencv_contrib-4.x\modules\stereo\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRe
