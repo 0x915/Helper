@@ -25,7 +25,7 @@ void init() {
 	ui_scale = (float) dv_width / (float) ui_width;
 	system_dpi = GetDpiForSystem();
 	
-	Logger.info("初始化 版本 1.0.2");
+	Logger.info("初始化 版本 1.0.3");
 	Logger.info(fformat(
 		"分辨率 逻辑[{0}x{1}] 物理[{2}x{3}] 缩放[{4:d}%] DPI感知[{5}:{6}]",
 		ui_width, ui_height,
