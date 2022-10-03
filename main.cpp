@@ -25,6 +25,7 @@ void init() {
 	ui_scale = (float) dv_width / (float) ui_width;
 	system_dpi = GetDpiForSystem();
 	
+	Logger.info("初始化 版本 1.0.2");
 	Logger.info(fformat(
 		"分辨率 逻辑[{0}x{1}] 物理[{2}x{3}] 缩放[{4:d}%] DPI感知[{5}:{6}]",
 		ui_width, ui_height,
@@ -36,7 +37,7 @@ void init() {
 	platform::InitFliter();
 }
 
-int main(int, char *[]) {
+int main(int argc, char *argv[]) {
 	init();
 	
 	Logger.trace(fformat("main start"));
@@ -50,8 +51,8 @@ int main(int, char *[]) {
 	vm_height = 1080;
 	cv_scale = (f32) vm_height / (f32) cv_height;
 	
-	AppPCR::MAIN();
-	
+	AppPCR::MAIN(argc, argv);
+
 //	platform::TypeMEMU memu("127.0.0.1:21503", "VM", "/dev/input/event6", {1278, 718});
 
 //	chrono::time_point<chrono::steady_clock> start;

@@ -134,6 +134,66 @@ namespace AppPCR {
 	
 	using namespace PRIVATE;
 	
+	
+	namespace AutoStory {
+		bool init = false;
+		const uint16 base = 0x00A0;
+		const string name = "自动查看剧情";
+		map<const string, flag::FLAG> flag;
+		
+		vector<string> flagMake{
+			"首页", "列表", "内容", "结束",
+		};
+		
+		bool MAIN(platform::TypeMEMU &mu, flag::FLAG *go = &nullFlag) {
+			if (!init) init = INIT(base, name, flagMake, flag);
+			using namespace basic;
+			
+			const string Title = "剧情查看";
+			if (go == &nullFlag) l.push(&flag["首页"]);
+			else l.push(go);
+			
+			while (l.isBase(base)) {
+				while (l.isFlag(&flag["首页"])) {
+					click(mu, PCR["剧情:首页新内容"], 0.9, {1, true}, {}, {MT_SELF, 500});
+					if (exist(mu, PCR["剧情:子页面"])) l.move(&flag["列表"]);
+					if (exist(mu, PCR["剧情:菜单"])) l.move(&flag["内容"]);
+				}
+				
+				while (l.isFlag(&flag["列表"])) {
+					click(mu, PCR["剧情:子页新内容"], 0.96, {1, true}, {}, {MT_SELF, 500});
+					click(mu, PCR["剧情:数据下载"], 0.9, {1, true}, {}, {MT_SELF, 500});
+					if (exist(mu, PCR["剧情:菜单"])) l.move(&flag["内容"]);
+					
+					if (!exist(mu, PCR["剧情:子页新内容"]))
+						click(mu, PCR["通用:返回"], 0.9, {1, true}, {}, {MT_SELF, 500});
+					if (exist(mu, PCR["剧情:主线"])) l.move(&flag["首页"]);
+					
+				}
+				while (l.isFlag(&flag["内容"])) {
+					click(mu, PCR["剧情:跳过"], 0.9, {1, true}, {}, {MT_SELF, 500});
+					click(mu, PCR["剧情:跳过确认"], 0.9, {1, true}, {}, {MT_SELF, 500});
+					if (!exist(mu, PCR["剧情:跳过"])) {
+						click(mu, PCR["剧情:菜单"], 0.9, {1, true}, {}, {MT_SELF, 500});
+					}
+					click(mu, PCR["剧情:关闭"], 0.9, {1, true}, {}, {MT_SELF, 500});
+					click(mu, PCR["剧情:数据下载"], 0.9, {1, true}, {}, {MT_SELF, 500});
+					
+				}
+				while (l.isFlag(&flag["结束"])) {
+				
+				}
+				// PASS 终止
+				while (l.isFlag(&flag["结束"])) {
+					Logger.info(fformat("{0} 完成于[{1}]", Title, l.getNote()));
+					l.pop();
+					return true;
+				}
+			}
+			return false;
+		}
+	}
+	
 	namespace JoinLevelNull {
 		bool init = false;
 		const uint16 base = 0x00A0;
@@ -253,13 +313,14 @@ namespace AppPCR {
 		map<const string, flag::FLAG> flag;
 		
 		vector<string> flagMake{
-			"地域", "一层", "二层", "三层", "四层", "五层", "报酬", "撤退", "结束"
+			"地下城", "地域", "一层", "二层", "三层", "四层", "五层", "报酬", "撤退", "结束"
 		};
 		
 		bool MAIN(platform::TypeMEMU &mu, flag::FLAG *go = &nullFlag, bool ByPassBoss = true) {
 			if (!init) init = INIT(base, name, flagMake, flag);
 			using namespace basic;
 			const string Title = "地下城";
+			l.push(&flag["地下城"]);
 			if (go == &nullFlag) l.push(&flag["地域"]);
 			else l.push(go);
 			
@@ -268,7 +329,7 @@ namespace AppPCR {
 				while (l.isFlag(&flag["地域"])) {
 					// Note 页面：地下城选择地域
 					//      寻找 {剩余次数0/1} 跳转 -> 次数不足返回
-					if (exist(mu, PCR["地下城:次数0/1"]) and exist(mu, PCR["地下城:EX3"])) {
+					if (exist(mu, PCR["地下城:EX3"]) and exist(mu, PCR["地下城:次数0/1"])) {
 						Logger.warn("地下城次数不足 返回");
 						l.move(&flag["结束"]);
 						break;
@@ -285,19 +346,19 @@ namespace AppPCR {
 					//      寻找 {N/5} -> 跳转 {N层}
 					if (exist(mu, PCR["地下城:撤退"])) {
 						if (exist(mu, PCR["地下城:1/5"], 0.975)) {
-							l.move(&flag["一层"]);
+							l.push(&flag["一层"]);
 							break;
 						} else if (exist(mu, PCR["地下城:2/5"], 0.975)) {
-							l.move(&flag["二层"]);
+							l.push(&flag["二层"]);
 							break;
 						} else if (exist(mu, PCR["地下城:3/5"], 0.975)) {
-							l.move(&flag["三层"]);
+							l.push(&flag["三层"]);
 							break;
 						} else if (exist(mu, PCR["地下城:4/5"], 0.975)) {
-							l.move(&flag["四层"]);
+							l.push(&flag["四层"]);
 							break;
 						} else if (exist(mu, PCR["地下城:5/5"], 0.975)) {
-							l.move(&flag["五层"]);
+							l.push(&flag["五层"]);
 							break;
 						}
 					}
@@ -338,6 +399,7 @@ namespace AppPCR {
 				while (l.isFlag(&flag["五层"])) {
 					if (ByPassBoss and exist(mu, PCR["地下城:5/5"])) {
 						Logger.warn(fformat("{0} 五层BOSS跳过", Title));
+						l.pop();
 						l.move(&flag["结束"]);
 //						if (exist(mu, PCR["地下城:次数1/1"], 0.9)) {
 //							l.move(&flag["撤退"]);
@@ -352,7 +414,7 @@ namespace AppPCR {
 					while (exist(mu, PCR["地下城:报酬确认"])) {
 						click(mu, PCR["地下城:报酬确认"], 0.8, {1, true}, {}, {});
 					}
-					l.move(&flag["地域"]);
+					l.pop();
 				}
 				// PASS 地下城撤退
 				while (l.isFlag(&flag["撤退"])) {
@@ -363,9 +425,9 @@ namespace AppPCR {
 					if (exist(mu, PCR["地下城:撤退窗口"])) {
 						click(mu, PCR["地下城:撤退确认"], 0.8, {1, true}, {}, {MT_SELF, 0});
 						if (exist(mu, PCR["地下城:次数1/1"], 0.9)) {
-							l.move(&flag["地域"]);
+						
 						} else if (exist(mu, PCR["地下城:次数0/1"])) {
-							l.move(&flag["结束"]);
+							l.pop();
 						}
 					}
 				}
@@ -402,14 +464,21 @@ namespace AppPCR {
 			while (l.isBase(base)) {
 				// PASS 关卡列表 下一关
 				while (l.isFlag(&flag["选择关卡"])) {
+					
+					
 					// Note 寻找 {下一关标志} -> 点击 {下一关-偏移} -> 反馈 {关卡挑战按钮}
-					click(mu, PCR["战斗:下一关"], 0.975, {1, true},
-						  {}, {MT_SELF, 1000});
+					click(mu, PCR["战斗:下一关"], 0.975, {2, true},
+						  {}, {MT_SELF, 500});
 					
 					// Note 校验 出现 {关卡挑战按钮} 跳转 -> 关卡挑战
 					if (exist(mu, PCR["战斗:挑战按钮"])) {
 						l.move(&flag["打开关卡"]);
 						break;
+					} else {
+						click(mu, PCR["通告:关闭按钮"], 0.9, {1, true},
+							  {}, {MT_SELF, 100});
+						click(mu, PCR["战斗:商店取消"], 0.9, {1, true},
+							  {}, {MT_SELF, 100});
 					}
 					
 					// Note 寻找 {下一关备用标志} -> 点击 {备用偏移}
@@ -464,13 +533,52 @@ namespace AppPCR {
 		}
 	}
 	
-	bool MAIN() {
-		AppPCR::READ("PCR1280720.xml");
+	bool MAIN(int argc, char *argv[]) {
+		
 		platform::TypeMEMU memu("127.0.0.1:21503", "VM", "/dev/input/event6", {1278, 718});
+		
+		for (int i = 1; i < argc; i++) {
+			if (*argv[i] == 'C') {
+				CHAR sysTimeStr[13] = {};
+				SYSTEMTIME systemTime;
+				GetLocalTime(&systemTime);
+				sprintf_s(sysTimeStr,
+						  "%u%02u%02u-%03u",
+						  systemTime.wHour,
+						  systemTime.wMinute,
+						  systemTime.wSecond,
+						  systemTime.wMilliseconds);
+				memu.CaptureRender();
+				cv::imwrite(fformat("debug/{0:%Y%m%d}-{1}.tif", std::chrono::system_clock::now(), sysTimeStr), memu.screen);
+				return true;
+			}
+		}
+		
+		AppPCR::READ("PCR1280720.xml");
 		flag::FLAG LOAD(1, 1, "AppPCR");
 		l.root(&LOAD);
 		
-		AutoDungeon::MAIN(memu);
+		if (argc) {
+			for (int i = 1; i < argc; i++) {
+				
+				cout << "[- --:--:-- ------] Input:" << *argv[i];
+				if (*argv[i] == 'D') {
+					cout << "\033[92m 地下城 \033[0m" << endl;
+					AutoDungeon::MAIN(memu);
+				} else if (*argv[i] == 'N') {
+					cout << "\033[92m 刷图 \033[0m" << endl;
+					AutoNextLevel::MAIN(memu);
+				} else if (*argv[i] == 'S') {
+					cout << "\033[92m 剧情 \033[0m" << endl;
+					AutoStory::MAIN(memu);
+				} else {
+					cout << "\033[91m 未知输入 \033[0m" << endl;
+				}
+			}
+		}
+		
+		//AutoXXX::MAIN(memu);
+		//AutoDungeon::MAIN(memu);
 		//AutoNextLevel::MAIN(memu);
 		
 		return false;

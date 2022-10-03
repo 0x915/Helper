@@ -22,7 +22,8 @@ link_directories("C:/Package/pugixml/lib")
 link_libraries("C:/Package/pugixml/lib/pugixml.lib")
 include_directories(C:/Package/pugixml/include)
 
-add_executable(${Project} main.cpp emulator.cpp global.cpp logger.cpp core.cpp core.hpp match.cpp match.hpp basic.cpp App.PCR.cpp App.PCR.hpp)
+add_executable(${Project} main.cpp emulator.cpp global.cpp
+        logger.cpp core.cpp match.cpp basic.cpp App.PCR.cpp)
 
 target_link_libraries(${Project} ${OpenCV_LIBS})
 #target_link_libraries(${Project} C:/Package/spdlog/lib/spdlog.lib)

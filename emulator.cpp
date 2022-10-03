@@ -33,7 +33,7 @@ namespace platform {
 					std::string value = i.attribute("VALUE").value();
 					std::string eq = i.attribute("EQ").value();
 					if (!eq.empty()) {
-						Logger.trace(fformat("插入窗口黑名单 \"{0}\" {1}", value, (eq == "0") ? "包含" : "等于"));
+						Logger.trace(fformat("插入句柄Title/Class黑名单 {1} \"{0}\"", value, (eq == "0") ? "&" : "="));
 						whitelist.insert(std::pair<std::string, uint8_t>(value, (eq == "0" ? 0 : 1)));
 					}
 				}
@@ -49,7 +49,7 @@ namespace platform {
 					std::string value = i.attribute("VALUE").value();
 					std::string eq = i.attribute("EQ").value();
 					if (!eq.empty()) {
-						Logger.trace(fformat("插入窗口白名单 \"{0}\" {1}", value, (eq == "0") ? "包含" : "等于"));
+						Logger.trace(fformat("插入句柄Title/Class白名单 {1} \"{0}\" ", value, (eq == "0") ? "&" : "="));
 						whitelist.insert(std::pair<std::string, uint8_t>(value, (eq == "0" ? 0 : 1)));
 					}
 				}
@@ -234,10 +234,25 @@ namespace platform {
 	void TypeMEMU::SetWindow() {
 		this->Update(true);
 		if (hWndTop == nullptr) return;
-		SetWindowPos(hWndTop, nullptr,
-					 rectTop.left, rectTop.top,
-					 sizeMainWindow.x, sizeMainWindow.y,
-					 SWP_NOMOVE);
+		if (SetWindowPos(hWndTop, nullptr,
+						 rectTop.left, rectTop.top,
+						 sizeMainWindow.x, sizeMainWindow.y,
+						 SWP_NOMOVE) == false) {
+			auto err = GetLastError();
+			TCHAR Buf[128];
+			FormatMessageA(
+				FORMAT_MESSAGE_ALLOCATE_BUFFER | FORMAT_MESSAGE_FROM_SYSTEM ,
+				nullptr,
+				err,
+				MAKELANGID(LANG_NEUTRAL, SUBLANG_DEFAULT),
+				(LPTSTR) &Buf,
+				0, nullptr);
+			Logger.error(fformat(
+				" {0}:{1} SetWindowPos() Fail({2}) {3}. exit",
+				__FILE__, __LINE__,err,Buf
+			));
+			exit(0);
+		}
 		GetClientRect(hWndRender, &rectRender);
 	}
 	
@@ -253,8 +268,8 @@ namespace platform {
 			sleep_ms(10);
 		}
 		
-		int32 &w = sizeMainWindow.x;
-		int32 &h = sizeMainWindow.y;
+		int32 &w = runResolution.x;
+		int32 &h = runResolution.y;
 		
 		HDC hDC = GetDC(hWndRender);
 		HDC hCDC = CreateCompatibleDC(hDC);

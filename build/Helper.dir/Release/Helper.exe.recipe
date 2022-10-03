@@ -2,10 +2,10 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>G:\Code\Helper\build\x64\Release\ZERO_CHECK</FullPath>
+      <FullPath>D:\Desktop\Code\Helper\build\x64\Release\ZERO_CHECK</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>G:\Code\Helper\build\Release\Helper.exe</FullPath>
+      <FullPath>D:\Desktop\Code\Helper\build\Release\Helper.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

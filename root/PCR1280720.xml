@@ -44,8 +44,15 @@
     <file id="剧情:角色" file="04剧情02角色.png" note="04剧情02角色" roi="FULL" fb="SELF"/>
     <file id="剧情:公会" file="04剧情03公会.png" note="04剧情03公会" roi="FULL" fb="SELF"/>
     <file id="剧情:特别" file="04剧情04特别.png" note="04剧情04特别" roi="FULL" fb="SELF"/>
-    <file id="剧情:新内容" file="04剧情05新内容.png" note="04剧情05新内容" roi="FULL" fb="SELF"/>
-    <file id="剧情:新内容" file="04剧情06新内容.png" note="04剧情06新内容" roi="FULL" fb="SELF"/>
+    <file id="剧情:首页新内容" file="04剧情05新内容.png" note="04剧情05新内容" roi="FULL" fb="15 0 180 180 SELF"/>
+    <file id="剧情:子页新内容" file="04剧情06新内容1.png" note="04剧情06新内容" roi="FULL" fb="5 15 550 120 SELF"/>
+    <file id="剧情:子页新内容" file="04剧情06新内容2.png" note="04剧情06新内容" roi="FULL" fb="5 15 550 120 SELF"/>
+    <file id="剧情:子页面" file="04剧情06子页面.png" note="04剧情06子页面" roi="FULL" fb="NONE"/>
+    <file id="剧情:数据下载" file="04剧情06数据下载.png" note="04剧情06数据下载" roi="FULL" fb="0 300 125 40 SELF"/>
+    <file id="剧情:菜单" file="04剧情07菜单.png" note="04剧情07菜单" roi="FULL" fb="SELF"/>
+    <file id="剧情:跳过" file="04剧情07跳过.png" note="04剧情07跳过" roi="FULL" fb="SELF"/>
+    <file id="剧情:跳过确认" file="04剧情08跳过.png" note="04剧情08跳过" roi="FULL" fb="SELF"/>
+    <file id="剧情:关闭" file="04剧情08关闭.png" note="04剧情08关闭" roi="FULL" fb="SELF"/>
 
     <file id="公会之家:全部收取" file="04公会之家01全部收取按钮.png" note="04公会之家01全部收取按钮" roi="FULL" fb="SELF"/>
 

@@ -4,9 +4,11 @@
 
 #include "core.hpp"
 
+
 namespace templ {
 	
 	using namespace std;
+	const bool quite = true;
 	
 	TL::TL(const std::string &basedir, const std::string &imgfile, const std::string &note,
 		   vec_int32 roi5i, vec_int32 fb5i, vec_int32 param) {
@@ -22,7 +24,8 @@ namespace templ {
 		text = note;
 		
 		// 读取 模板图像
-		if (this->read()) {} else {
+		if (this->read()) {}
+		else {
 			isNull = true;
 			Logger.error(fformat("模板[{0}] ({1}) 图像文件读取失败", text, file));
 		}
@@ -61,9 +64,10 @@ namespace templ {
 			Logger.error("               - 矩形 起点(X,Y)宽高(W,H) 起点模式(M)参考宏定义");
 		}
 		
-		Logger.info(fformat("定义模板[{0}] ({1}) {{{2}w{3}h {4}c}} {5}",
-							text, imgfile, width, height, channel,
-							isNull ? "\033[91m但不可用\033[0m" : ""));
+		if (!quite)
+			Logger.info(fformat("定义模板[{0}] ({1}) {{{2}w{3}h {4}c}} {5}",
+								text, imgfile, width, height, channel,
+								isNull ? "\033[91m但不可用\033[0m" : ""));
 		
 		stringstream tempstr;
 		tempstr << " ↑↑ ";
@@ -80,9 +84,9 @@ namespace templ {
 			tempstr << "绝对位置反馈";
 			tempstr << fformat("(Fixed {0},{1} {2}w{3}h)", fb.x, fb.y, fb.width, fb.height);
 		}
-		Logger.trace(tempstr.str());
+		if (!quite) Logger.trace(tempstr.str());
 		
-		Logger.info("-----------------------------------------------------------------------");
+		if (!quite) Logger.info("-----------------------------------------------------------------------");
 		
 	}
 	
@@ -103,7 +107,7 @@ namespace templ {
 				alpha = splitBGRA[3];
 			} else {
 				channel = 3;
-				Logger.warn(fformat(" ↓↓ 无效蒙版 全白Alpha通道 视为不透明图像"));
+				Logger.warn(fformat("无效蒙版({0}) 全白Alpha通道 视为不透明图像",text));
 			}
 		}
 		return true;
